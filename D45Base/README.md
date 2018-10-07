@@ -1,9 +1,11 @@
 # Introduction
-This library is to control a 4 Wheel Omni Drive in a D45 Arrangement. This class is derived from [BotBase](../BotBase/) class.
+This library is to control a 4 Wheel Omni Drive in a D45 Arrangement as Shown in the Figure - 
+![D45Base image](../DATA/Images/D45Base/D45Base_Assembly.png)
+This class is derived from [BotBase](../BotBase/) class.
 
 ## Information
 ### Testing
-Preliminary Testing Done.
+The Library has not been tested.
 - The *Wheels* are numbered in a Counter Clockwise sense from 1 to 4.
 - Counter Clockwise Rotation is considered as Positive.
 
@@ -54,5 +56,5 @@ This class is derived directly from the BotBase class (public inheritance).
 ##### Member Functions
 - **<font color="#CD00FF">void</font> <font color="#5052FF">AssignPins</font>(<font color="#FF00FF">int</font> \*PWM\_pins, <font color="#FF00FF">int</font> \*DIR\_PINs, <font color="#FF00FF">bool</font> \*reverseDIRs)**: Attaches the *PWM\_pins*, *DIR\_PINs* and *reverseDIRs* to the Bot Base.
 - **<font color="#CD00FF">void</font> <font color="#5052FF">SetAngularVelocity</font>(<font color="#FF00FF">int</font> angular_vel)**: Used to modify the Angular Velocity of the Base.
-- **<font color="#CD00FF">void</font> <font color="#5052FF">Rotate</font>(<font color="#FF00FF">int</font> pwm)**: Adds the Functionality of Rotating in the given configuration. Positive PWM applies Counter Clockwise Rotation and Negative PWM applies Clockwise Rotation.
+- **<font color="#CD00FF">void</font> <font color="#5052FF">Rotate</font>(<font color="#FF00FF">int</font> pwm)**: Adds the Functionality of Rotating in a Mecanum Drive. Positive PWM applies Counter Clockwise Rotation and Negative PWM applies Clockwise Rotation.
 - **<font color="#CD00FF">void</font> <font color="#5052FF">KillMotors</font>()**: Used for bringing the Bot to Rest Motion.
