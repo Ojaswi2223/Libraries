@@ -1,5 +1,5 @@
 #include <BotBase.h>
-#include "D45Base.h"
+#include <D45Base.h>
 
 int D45BASE_DIRs[] = {47, 53, 51, 49};
 int D45BASE_PWMs[] = {8, 10, 9, 7};
@@ -56,9 +56,7 @@ void loop() {
     else if (c == 'K')
     {
       Serial.println("Killed all motors");
-      pwm = 0;
-
-
+      robotBase.KillMotors();
     }
   }
 }
